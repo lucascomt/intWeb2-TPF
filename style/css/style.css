@@ -38,10 +38,6 @@ fieldset {
   width: 100%;
   border: #b5bdd5 solid 1px;
   text-align: left;
-  padding: 15px;
-}
-fieldset legend {
-  padding: 4px;
 }
 
 p {
