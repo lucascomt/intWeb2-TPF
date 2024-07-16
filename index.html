@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr-ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site personnel, pour tester et regrouper mes connaissances en programmation web responsive. Site testé avec w3c et lighthouse.">
+    <link rel="stylesheet" href="style/css/style.css">
+    <link rel="manifest" href="manifest.json">
+    <script defer src="js/script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Óðinn</title>
+    <script>
+        // Register service worker.
+if ('serviceWorker' in navigator) {
+ window.addEventListener('load', () => {
+ navigator.serviceWorker.register('service-worker.js')
+ .then((reg) => {
+ console.log('Service worker registered.', reg);
+ });
+ });
+}
+    </script>
+</head>
+<body>
+    <h1 class="text-3xl font-bold underline text-center">Petit test</h1>
+</body>
+</html>

@@ -1,0 +1,25 @@
+/**  VARIABLES **/
+$couleur-text: #606164; //texte
+$couleur-principale: #e9f3f6; //page
+$couleur-principale-fonce: #01154e; //cadre
+$couleur-header: #01154e; //background-header
+$couleur-background: #01154e;
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $couleur-background;
+  color: $couleur-text;
+  font-size: 1.2rem;
+  line-height: 1.1;
+  min-width: 450px;
+}
+
+/* Défini largeur maximum de la page */
+.container {
+  max-width: 1600px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 auto;
+  text-align: center;
+}
