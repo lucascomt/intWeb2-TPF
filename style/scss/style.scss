@@ -2,8 +2,8 @@
 $couleur-text: #b5bdd5; //texte
 $couleur-principale: #b5bdd5; //page
 $couleur-principale-fonce: #01154e; //cadre
-$couleur-header: #0001030e; //background-header
-$couleur-background: #01154e;
+$couleur-header: #010d2562; //background-header
+$couleur-background: #011a5f;
 
 body {
   margin: 0;
@@ -12,17 +12,21 @@ body {
   color: $couleur-text;
   font-size: 1.2rem;
   line-height: 1.1;
-  min-width: 450px;
+  min-width: 350px;
 }
 
-header {
+header, footer {
   background-color: $couleur-header;
+  width: 100%;
+}
+main {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /* Défini largeur maximum de la page */
 .container {
   max-width: 1600px;
-  width: 90%;
   margin: 0 auto;
   padding: 0 auto;
   text-align: center;
