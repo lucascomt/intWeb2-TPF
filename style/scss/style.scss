@@ -1,8 +1,8 @@
 /**  VARIABLES **/
-$couleur-text: #606164; //texte
-$couleur-principale: #e9f3f6; //page
+$couleur-text: #b5bdd5; //texte
+$couleur-principale: #b5bdd5; //page
 $couleur-principale-fonce: #01154e; //cadre
-$couleur-header: #01154e; //background-header
+$couleur-header: #0001030e; //background-header
 $couleur-background: #01154e;
 
 body {
@@ -13,6 +13,10 @@ body {
   font-size: 1.2rem;
   line-height: 1.1;
   min-width: 450px;
+}
+
+header {
+  background-color: $couleur-header;
 }
 
 /* Défini largeur maximum de la page */
