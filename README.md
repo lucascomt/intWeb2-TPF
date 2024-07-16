@@ -33,15 +33,9 @@ footer/navbar)
 Note : Tout manquement à cette contrainte entraînera une perte de point de 40%
 Ce travail porte sur les aspects suivants de l’intégration web :
 ● Intégration responsive à l’aide de la grilles Tailwind
-
 ● Composantes Tailwind
-
 ● Méthodologie BEM
-
 ● SASS
-
 ● L’accessibilité web
-
 ● Git
-
 ● Les Progressive Web Apps
