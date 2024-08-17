@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr-ca">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Site personnel, pour tester et regrouper mes connaissances en programmation web responsive. Site testé avec w3c et lighthouse.">
+    <meta name="description"
+        content="Site personnel, pour tester et regrouper mes connaissances en programmation web responsive. Site testé avec w3c et lighthouse.">
     <link rel="manifest" href="manifest.json">
     <script defer src="js/script.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -11,127 +13,187 @@
     <title>Óðinn - Le projet du Domaine Cyr</title>
     <script>
         // Register service worker.
-if ('serviceWorker' in navigator) {
- window.addEventListener('load', () => {
- navigator.serviceWorker.register('service-worker.js')
- .then((reg) => {
- console.log('Service worker registered.', reg);
- });
- });
-}
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('service-worker.js')
+                    .then((reg) => {
+                        console.log('Service worker registered.', reg);
+                    });
+            });
+        }
     </script>
 </head>
-<body><div class="container">
-    <header>
-        <div class="w-full">
-            <nav class="shadow-lg">
-                <div class="md:flex items-center justify-between py-2 px-8 md:px-12">
-                    <div class="flex justify-between items-center">
-                        <div class="font-bold md:text-3xl">
-                            <a href="index.html"><img src="https://odinn.ca/medias/logo.webp" class="w-20" alt="Logo d'Óðinn"></a>
-                            <p class="text-xl">Le projet du Domaine Y. Cyr</p>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="w-full">
+                <nav class="shadow-lg">
+                    <div class="md:flex items-center justify-between py-2 px-8 md:px-12">
+                        <div class="flex justify-between items-center">
+                            <div class="font-bold md:text-3xl">
+                                <a href="index.html"><img src="https://odinn.ca/medias/logo.webp" class="w-20"
+                                        alt="Logo d'Óðinn"></a>
+                                <p class="text-xl">Le projet du Domaine Y. Cyr</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:block mx-2">
+                            <a href="index.html"
+                                class="rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2">Accueil</a>
+                            <a href="projet.html"
+                                class="rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2">Le
+                                projet</a>
+                            <a href="photos.html"
+                                class="rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2">Les
+                                photos</a>
                         </div>
                     </div>
-                    <div class="flex flex-col md:flex-row md:block mx-2">
-                        <a href="index.html"
-                            class="rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2">Accueil</a>
-                        <a href="tournage.html"
-                            class="rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2">Le projet</a>
-                        <a href="tournage.html"
-                            class="rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2">Les photos</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <h1 class="text-3xl font-bold text-center m-5">Bienvenu au Domaine<br>Yolande Cyr</h1>
+            <section>
+                <h2 class="hidden">Carousel</h2>
+                <!-- Carousel trouve sur https://tailwindcomponents.com/component/carousel -->
+                <div class="max-w-2xl mx-auto">
+
+                    <div id="default-carousel" class="relative" data-carousel="static">
+                        <!-- Carousel wrapper -->
+                        <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
+                            <!-- Item 1 -->
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <span
+                                    class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">First
+                                    Slide</span>
+                                <img src="medias/photos/451252073_338651069181441_5040184232405001525_n.jpg"
+                                    class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                                    alt="...">
+                            </div>
+                            <!-- Item 2 -->
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="medias/photos/450676403_3667981886790210_7102307800968277694_n.jpg"
+                                    class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                                    alt="...">
+                            </div>
+                            <!-- Item 3 -->
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="medias/photos/450576741_1018788179617785_8988664932967651124_n.jpg"
+                                    class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                                    alt="...">
+                            </div>
+                        </div>
+                        <!-- Slider indicators -->
+                        <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+                            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1"
+                                data-carousel-slide-to="0"></button>
+                            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                                data-carousel-slide-to="1"></button>
+                            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                                data-carousel-slide-to="2"></button>
+                        </div>
+                        <!-- Slider controls -->
+                        <button type="button"
+                            class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                            data-carousel-prev>
+                            <span
+                                class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 19l-7-7 7-7"></path>
+                                </svg>
+                                <span class="hidden">Previous</span>
+                            </span>
+                        </button>
+                        <button type="button"
+                            class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                            data-carousel-next>
+                            <span
+                                class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg>
+                                <span class="hidden">Next</span>
+                            </span>
+                        </button>
                     </div>
+                    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
                 </div>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <h1 class="text-3xl font-bold text-center m-5">Bienvenu au Domaine<br>Yolande Cyr</h1>
-        <section>
-            <h2 class="hidden">Carousel</h2>
-<!-- Carousel trouve sur https://tailwindcomponents.com/component/carousel -->
-<div class="max-w-2xl mx-auto">
+            </section>
+            <section>
+                <h2 class="text-2xl font-bold text-center m-5">Presentation du Domaine</h2>
+                <fieldset class="p-5 mt-5">
+                    <legend class="p-1">Pourquoi Yolande Cyr: </legend>
+                    <p class="py-2">En hommage à ma mère, une femme qui chérissait profondément les moments passés en
+                        famille, j’ai décidé de trouver un moyen de poursuivre son héritage. Elle avait ce don unique de
+                        rassembler tous ceux qu’elle aimait autour d’elle, créant une atmosphère chaleureuse et
+                        accueillante, où chacun se sentait chez soi. Chaque réunion familiale était un moment sacré pour
+                        elle, une occasion de partager des rires, des histoires et des souvenirs inoubliables.</p>
+                    <p class="py-2">Depuis son départ, le vide laissé dans nos vies est immense. Cependant, il est
+                        essentiel pour moi de perpétuer cette tradition qu’elle a tant valorisée. J’ai donc cherché un
+                        lieu parfait, un coin tranquille où la famille pourrait se retrouver, échanger et créer de
+                        nouveaux souvenirs ensemble. Un espace où l’on peut se ressourcer, se détendre et célébrer la
+                        vie comme elle l’aurait voulu.</p>
+                    <p class="py-2">Ce lieu idéal est entouré de nature, offrant une sérénité propice aux
+                        rassemblements. Que ce soit pour des barbecues animés, des pique-niques ensoleillés ou
+                        simplement des balades apaisantes, cet endroit devient un refuge, un sanctuaire de paix. Je
+                        souhaite que chaque membre de la famille puisse se retrouver ici, se remémorer les bons moments
+                        passés avec elle, tout en forgeant de nouveaux souvenirs ensemble.</p>
+                    <p class="py-2">Ainsi, en rassemblant nos proches dans ce havre de paix, je continue de faire vivre
+                        l’esprit de ma mère. Chaque rire, chaque conversation et chaque instant partagé sont autant
+                        d’hommages à sa mémoire. Je suis convaincu que, grâce à ces rencontres, son héritage perdurera
+                        et continuera d’unir notre famille, comme elle l’a toujours souhaité.</p>
+                </fieldset>
+                <fieldset class="p-5 mt-5">
+                    <legend class="p-1"> La terre: </legend>
+                    <p class="py-2">Cette petite terre de 10 acres est un véritable havre de paix, où la nature
+                        s’épanouit tout au long de l’année. Au printemps, la majorité des parcelles deviennent
+                        inondables, créant un paysage éphémère où l’eau s’entrelace avec la terre. Mais passé cette
+                        saison, cet écosystème unique révèle toutes ses richesses.</p>
+                    <p class="py-2">D’un côté, une forêt dense abrite une biodiversité foisonnante. Les grands arbres,
+                        témoins du temps qui passe, offrent refuge à de nombreuses espèces d'oiseaux et d’insectes. Les
+                        rayons du soleil filtrent à travers le feuillage, illuminant le sous-bois d’une lumière douce et
+                        apaisante.</p>
+                    <p class="py-2">De l’autre côté, un milieu humide s’étend, véritable réservoir de vie. Les zones
+                        marécageuses sont le foyer de grenouilles chantantes et de libellules vibrantes, créant une
+                        symphonie naturelle tout au long de l’année. Chaque visite révèle une nouvelle facette de cet
+                        écosystème vivant.</p>
+                    <p class="py-2">Cette terre offre également un accès direct à la rivière des Peupliers, un joyau
+                        pour les amateurs de canoë. Naviguer sur ces eaux tranquilles permet d’explorer des paysages
+                        enchanteurs, tout en se rapprochant de la faune environnante. Les balades en canoë deviennent
+                        ainsi des moments privilégiés, au cœur de la nature.</p>
+                    <p class="py-2">En somme, cette petite terre de 10 acres, bien que modeste en taille, est un
+                        véritable trésor de biodiversité et d’évasion. Elle invite à la découverte et à la
+                        contemplation, offrant un espace où chaque saison apporte son lot de merveilles. Que l’on soit
+                        passionné de nature ou simplement en quête de sérénité, cet endroit a tout pour séduire.</p>
+                </fieldset>
+            </section>
+        </main>
+        <footer>
+            <div class="grid md:grid-cols-10 grid-cols-1 gap-1">
+                <div class="md:col-span-5 col-span-1">
+                    <p class="md:text-left m-2">Telephone: <a href="tel:000-000-0000">000-000-0000</a><br>
+                        Courriel: <a href="mailto:lucas@odinn.biz">lucas@odinn.biz</a></p>
+                </div>
+                <div class="md:col-span-5 col-span-1 md:text-right m-2">
+                    <p>Lucas Comtois<br>
+                        <a href="https://odinn.biz" target="_blank">Site web principal</a>
+                    </p>
+                </div>
+            </div>
 
-	<div id="default-carousel" class="relative" data-carousel="static">
-        <!-- Carousel wrapper -->
-        <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
-            <!-- Item 1 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>
-                <img src="medias/photos/451252073_338651069181441_5040184232405001525_n.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+
+            <div class="flex flex-col items-center">
+                <p class="text-sm text-center text-gray-500">© Copyright 2024. Dans le cadre d'une formation du
+                    C&eacute;gep de Trois-Rivi&egrave;res. <a href="https://github.com/lucascomt/intWeb2-TPF"
+                        target="_blank">Lien Github</a> <a href="https://lucascomt.github.io/intWeb2-TPF/"
+                        target="_blank">Lien Web</a></p>
             </div>
-            <!-- Item 2 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="medias/photos/450676403_3667981886790210_7102307800968277694_n.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
-            </div>
-            <!-- Item 3 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="medias/photos/450576741_1018788179617785_8988664932967651124_n.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
-            </div>
-        </div>
-        <!-- Slider indicators -->
-        <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-        </div>
-        <!-- Slider controls -->
-        <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
-            <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-                <span class="hidden">Previous</span>
-            </span>
-        </button>
-        <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
-            <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                <span class="hidden">Next</span>
-            </span>
-        </button>
+        </footer>
     </div>
-	<p class="mt-5">
-        Petite presentation de mon Caroussel.
-	</p>
-    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
-</div>
-</section>
-<section>
-    <h2 class="text-2xl font-bold text-center m-5">Presentation du Domaine</h2>
-    <fieldset class="p-5 mt-5">
-        <legend class="p-1">Pourquoi Yolande Cyr: </legend>
-        <p class="py-2">En hommage à ma mère, une femme qui chérissait profondément les moments passés en famille, j’ai décidé de trouver un moyen de poursuivre son héritage. Elle avait ce don unique de rassembler tous ceux qu’elle aimait autour d’elle, créant une atmosphère chaleureuse et accueillante, où chacun se sentait chez soi. Chaque réunion familiale était un moment sacré pour elle, une occasion de partager des rires, des histoires et des souvenirs inoubliables.</p>
-        <p class="py-2">Depuis son départ, le vide laissé dans nos vies est immense. Cependant, il est essentiel pour moi de perpétuer cette tradition qu’elle a tant valorisée. J’ai donc cherché un lieu parfait, un coin tranquille où la famille pourrait se retrouver, échanger et créer de nouveaux souvenirs ensemble. Un espace où l’on peut se ressourcer, se détendre et célébrer la vie comme elle l’aurait voulu.</p>
-        <p class="py-2">Ce lieu idéal est entouré de nature, offrant une sérénité propice aux rassemblements. Que ce soit pour des barbecues animés, des pique-niques ensoleillés ou simplement des balades apaisantes, cet endroit devient un refuge, un sanctuaire de paix. Je souhaite que chaque membre de la famille puisse se retrouver ici, se remémorer les bons moments passés avec elle, tout en forgeant de nouveaux souvenirs ensemble.</p>
-        <p class="py-2">Ainsi, en rassemblant nos proches dans ce havre de paix, je continue de faire vivre l’esprit de ma mère. Chaque rire, chaque conversation et chaque instant partagé sont autant d’hommages à sa mémoire. Je suis convaincu que, grâce à ces rencontres, son héritage perdurera et continuera d’unir notre famille, comme elle l’a toujours souhaité.</p>
-    </fieldset>
-    <fieldset class="p-5 mt-5">
-        <legend class="p-1"> La terre: </legend>
-        <p class="py-2">Cette petite terre de 10 acres est un véritable havre de paix, où la nature s’épanouit tout au long de l’année. Au printemps, la majorité des parcelles deviennent inondables, créant un paysage éphémère où l’eau s’entrelace avec la terre. Mais passé cette saison, cet écosystème unique révèle toutes ses richesses.</p>
-        <p class="py-2">D’un côté, une forêt dense abrite une biodiversité foisonnante. Les grands arbres, témoins du temps qui passe, offrent refuge à de nombreuses espèces d'oiseaux et d’insectes. Les rayons du soleil filtrent à travers le feuillage, illuminant le sous-bois d’une lumière douce et apaisante.</p>
-        <p class="py-2">De l’autre côté, un milieu humide s’étend, véritable réservoir de vie. Les zones marécageuses sont le foyer de grenouilles chantantes et de libellules vibrantes, créant une symphonie naturelle tout au long de l’année. Chaque visite révèle une nouvelle facette de cet écosystème vivant.</p>
-        <p class="py-2">Cette terre offre également un accès direct à la rivière des Peupliers, un joyau pour les amateurs de canoë. Naviguer sur ces eaux tranquilles permet d’explorer des paysages enchanteurs, tout en se rapprochant de la faune environnante. Les balades en canoë deviennent ainsi des moments privilégiés, au cœur de la nature.</p>
-        <p class="py-2">En somme, cette petite terre de 10 acres, bien que modeste en taille, est un véritable trésor de biodiversité et d’évasion. Elle invite à la découverte et à la contemplation, offrant un espace où chaque saison apporte son lot de merveilles. Que l’on soit passionné de nature ou simplement en quête de sérénité, cet endroit a tout pour séduire.</p>
-    </fieldset>
-</section>
-    </main>
-    <footer>
-        <div class="grid md:grid-cols-10 grid-cols-1 gap-1">
-            <div class="md:col-span-5 col-span-1">
-                <p class="md:text-left m-2">Telephone: <a href="tel:000-000-0000">000-000-0000</a><br>
-                    Courriel: <a href="mailto:lucas@odinn.biz">lucas@odinn.biz</a></p>
-            </div>
-            <div class="md:col-span-5 col-span-1 md:text-right m-2">
-                <p class="text-gray-500 dark:text-gray-400">Lucas Comtois<br>
-                <a href="https://odinn.biz" target="_blank">Site web principal</a></p>
-            </div>
-        </div>
-
-
-        <div class="flex flex-col items-center">
-            <p class="text-sm text-center text-gray-500">© Copyright 2024. Dans le cadre d'une formation du
-                C&eacute;gep de Trois-Rivi&egrave;res. <a href="https://github.com/lucascomt/intWeb2-TPF" 
-                target="_blank">Lien Github</a> <a href="https://lucascomt.github.io/intWeb2-TPF/" target="_blank">Lien Web</a></p>
-        </div>
-    </footer>
-</div>
 </body>
+
 </html>
