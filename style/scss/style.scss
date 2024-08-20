@@ -1,3 +1,16 @@
+@font-face {
+	font-family: 'DMSerifText-Regular';
+	src: url(‘https://lucascomt.github.io/intWeb2-TPF//fonts/DMSerifText-Regular.ttf’) format(‘truetype’)
+}
+@font-face {
+	font-family: 'GreyQo-Regular';
+	src: url(‘https://lucascomt.github.io/intWeb2-TPF//fonts/GreyQo-Regular.ttf’) format(‘truetype’)
+}
+@font-face {
+	font-family: 'Oswald-Regular';
+	src: url(‘https://lucascomt.github.io/intWeb2-TPF//fonts/Oswald-Regular.ttf’) format(‘truetype’)
+}
+
 /**  VARIABLES **/
 $couleur-text: #A4EF9A; //texte
 $couleur-principale: #b5bdd5; //page
@@ -13,6 +26,15 @@ body {
   font-size: 1.2rem;
   line-height: 1.1;
   min-width: 350px;
+  font-family: 'Oswald-Regular', sans-serif;
+}
+
+h1 {
+  font-family: 'DMSerifText-Regular', sans-serif;
+}
+
+.yolande{
+font-family: 'GreyQo-Regular', serif;
 }
 
 header, footer {
