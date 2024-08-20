@@ -19,7 +19,8 @@ h1 {
   font-family: "Parisienne", system-ui;
   font-weight: 600;
   font-style: italic;
-  font-size: 2em;
+  font-size: 3em;
+  margin: 30px;
 }
 
 header, footer {
