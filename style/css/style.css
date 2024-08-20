@@ -1,15 +1,15 @@
 @charset "UTF-8";
 @font-face {
   font-family: "DMSerifText-Regular";
-  src: url(‘https://lucascomt.github.io/intWeb2-TPF//fonts/DMSerifText-Regular.ttf’) format(‘truetype’);
+  src: url(‘https://lucascomt.github.io/intWeb2-TPF/fonts/DMSerifText-Regular.ttf’) format(‘truetype’);
 }
 @font-face {
   font-family: "GreyQo-Regular";
-  src: url(‘https://lucascomt.github.io/intWeb2-TPF//fonts/GreyQo-Regular.ttf’) format(‘truetype’);
+  src: url(‘https://lucascomt.github.io/intWeb2-TPF/fonts/GreyQo-Regular.ttf’) format(‘truetype’);
 }
 @font-face {
   font-family: "Oswald-Regular";
-  src: url(‘https://lucascomt.github.io/intWeb2-TPF//fonts/Oswald-Regular.ttf’) format(‘truetype’);
+  src: url(‘https://lucascomt.github.io/intWeb2-TPF/fonts/Oswald-Regular.ttf’) format(‘truetype’);
 }
 /**  VARIABLES **/
 body {
