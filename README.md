@@ -47,7 +47,7 @@ Ce travail porte sur les aspects suivants de l’intégration web :
 
 ● Les Progressive Web Apps
 
-composants tailwind ajoutés
+3 composants tailwind ajoutés
 
 Caroussel page index: https://flowbite.com/docs/components/carousel/
 
