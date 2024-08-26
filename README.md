@@ -32,6 +32,7 @@ footer/navbar)
 
 Note : Tout manquement à cette contrainte entraînera une perte de point de 40%
 Ce travail porte sur les aspects suivants de l’intégration web :
+
 ● Intégration responsive à l’aide de la grilles Tailwind
 
 ● Composantes Tailwind
@@ -45,3 +46,8 @@ Ce travail porte sur les aspects suivants de l’intégration web :
 ● Git
 
 ● Les Progressive Web Apps
+
+composants tailwind ajoutés
+Caroussel page index: https://flowbite.com/docs/components/carousel/
+Time line page projet: https://flowbite.com/docs/components/timeline/ 
+Grid page photos: https://tailwindcss.com/docs/grid-template-columns
