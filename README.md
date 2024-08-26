@@ -48,6 +48,9 @@ Ce travail porte sur les aspects suivants de l’intégration web :
 ● Les Progressive Web Apps
 
 composants tailwind ajoutés
+
 Caroussel page index: https://flowbite.com/docs/components/carousel/
+
 Time line page projet: https://flowbite.com/docs/components/timeline/ 
+
 Grid page photos: https://tailwindcss.com/docs/grid-template-columns
