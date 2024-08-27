@@ -20,7 +20,7 @@ h1 {
   font-family: "DM Serif Text", system-ui;
 }
 
-.yolande{
+.yolande {
   font-family: "Parisienne", system-ui;
   font-weight: 600;
   font-style: italic;
@@ -28,10 +28,12 @@ h1 {
   margin: 30px;
 }
 
-header, footer {
+header,
+footer {
   background-color: $couleur-header;
   width: 100%;
 }
+
 main {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -52,4 +54,14 @@ fieldset {
   text-align: left;
 }
 
+//désactivation de la validation HTML5
+input:invalid {
+  box-shadow: none;
+}
 
+//message erreurs dans formulaire
+.error-message {
+  color: #e53e3e;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}

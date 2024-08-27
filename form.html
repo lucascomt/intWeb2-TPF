@@ -9,7 +9,7 @@
     <link rel="manifest" href="manifest.json">
     <script defer src="js/script.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"  rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="style/css/style.css">
     <title>Óðinn - Le projet du Domaine Cyr</title>
     <script>
@@ -23,9 +23,11 @@
             });
         }
     </script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Oswald:wght@200..700&family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Oswald:wght@200..700&family=Parisienne&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -51,61 +53,70 @@
                             <a href="photos.html"
                                 class="rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2">Les
                                 photos</a>
+                                <a href="form.html"
+                                class="rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2">Inscription</a>
                         </div>
                     </div>
                 </nav>
             </div>
         </header>
         <main>
-            <h1 class="text-3xl font-bold text-center m-5">Le Formulaire</h1>
+            <h1 class="text-3xl font-bold text-center m-5">Inscription</h1>
             <section>
-                <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+                <div class="flex justify-center min-h-screen">
 
-                    <form id="customForm" class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
-                        <h2 class="text-2xl font-bold mb-6">Inscription</h2>
-                        
+                    <form id="customForm" class="w-full max-w-md"> 
                         <div class="mb-4">
-                            <label for="username" class="block text-sm font-medium text-gray-700">Nom d'utilisateur</label>
-                            <input type="text" id="username" name="username" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                            <label for="username" class="block">Nom d'utilisateur</label>
+                            <input type="text" id="username" name="username" class="mt-1 block w-full rounded-md">
+                            <p class="error-message" id="usernameError"></p>
                         </div>
                 
                         <div class="mb-4">
-                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-                            <input type="email" id="email" name="email" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                            <label for="email" class="block">Email</label>
+                            <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md">
+                            <p class="error-message" id="emailError"></p>
                         </div>
                 
                         <div class="mb-4">
-                            <label for="password" class="block text-sm font-medium text-gray-700">Mot de passe</label>
-                            <input type="password" id="password" name="password" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                            <label for="password" class="block">Mot de passe</label>
+                            <input type="password" id="password" name="password" class="mt-1 block w-full rounded-md">
+                            <p class="error-message" id="passwordError"></p>
                         </div>
                 
                         <div class="mb-4">
-                            <label for="confirmPassword" class="block text-sm font-medium text-gray-700">Confirmer le mot de passe</label>
-                            <input type="password" id="confirmPassword" name="confirmPassword" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                            <label for="confirmPassword" class="block">Confirmer le mot de passe</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword" class="mt-1 block w-full rounded-md">
+                            <p class="error-message" id="confirmPasswordError"></p>
                         </div>
                 
                         <div class="mb-4">
-                            <label for="firstname" class="block text-sm font-medium text-gray-700">Prénom</label>
-                            <input type="text" id="firstname" name="firstname" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                            <label for="firstname" class="block">Prénom</label>
+                            <input type="text" id="firstname" name="firstname" class="mt-1 block w-full rounded-md">
+                            <p class="error-message" id="firstnameError"></p>
                         </div>
                 
                         <div class="mb-4">
-                            <label for="lastname" class="block text-sm font-medium text-gray-700">Nom de famille</label>
-                            <input type="text" id="lastname" name="lastname" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                            <label for="lastname" class="block">Nom de famille</label>
+                            <input type="text" id="lastname" name="lastname" class="mt-1 block w-full rounded-md4">
+                            <p class="error-message" id="lastnameError"></p>
                         </div>
                 
                         <div class="mb-4">
-                            <label for="phone" class="block text-sm font-medium text-gray-700">Numéro de téléphone</label>
-                            <input type="tel" id="phone" name="phone" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                            <label for="phone" class="block">Numéro de téléphone</label>
+                            <input type="tel" id="phone" name="phone" class="mt-1 block w-full rounded-md">
+                            <p class="error-message" id="phoneError"></p>
                         </div>
                 
                         <div class="mb-4">
-                            <label for="birthdate" class="block text-sm font-medium text-gray-700">Date de naissance</label>
-                            <input type="date" id="birthdate" name="birthdate" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                            <label for="birthdate" class="block">Date de naissance</label>
+                            <input type="date" id="birthdate" name="birthdate" class="mt-1 block w-full rounded-md">
+                            <p class="error-message" id="birthdateError"></p>
                         </div>
                 
-                        <button type="submit" class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">S'inscrire</button>
+                        <button type="submit" class="w-full bg-cyan-800 rounded-md">S'inscrire</button>
                     </form>
+                </div>
             </section>
         </main>
         <footer>

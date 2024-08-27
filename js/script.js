@@ -1,110 +1,70 @@
-const form = document.getElementById('form');
-const prenom = document.getElementById('prenom');
-const nom = document.getElementById('nom');
-const email = document.getElementById('email');
-const sujet = document.getElementById('sujet');
-const texte = document.getElementById('texte');
+document.getElementById('customForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Empêche l'envoi du formulaire
 
-const setError = (element, message) => {
-    const inputControl = element.parentElement;
-    const errorDisplay = inputControl.querySelector('.error');
+    // Réinitialiser les messages d'erreur
+    const errorFields = document.querySelectorAll('.error-message');
+    errorFields.forEach(function(field) {
+        field.textContent = '';
+    });
 
-    errorDisplay.innerText = message;
-    inputControl.classList.add('error');
-    inputControl.classList.remove('success')
-}
+    let isValid = true;
 
-const setSuccess = element => {
-    const inputControl = element.parentElement;
-    const errorDisplay = inputControl.querySelector('.error');
+    const username = document.getElementById('username').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const confirmPassword = document.getElementById('confirmPassword').value;
+    const firstname = document.getElementById('firstname').value;
+    const lastname = document.getElementById('lastname').value;
+    const phone = document.getElementById('phone').value;
+    const birthdate = document.getElementById('birthdate').value;
 
-    errorDisplay.innerText = '';
-    inputControl.classList.add('success');
-    inputControl.classList.remove('error');
-};
-
-const isValidEmail = email => {
-    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(String(email).toLowerCase());
-}
-
-const sendData = () => {
-    fetch('scripts/formmail.php', { // Remplacez 'votre_script_php.php' par le chemin de votre script PHP
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-            prenom: prenom.value.trim(),
-            nom: nom.value.trim(),
-            email: email.value.trim(),
-            sujet: sujet.value.trim(),
-            texte: texte.value.trim()
-        })
-    })
-
-    .then(data => {
-        window.location.replace('merci.php');
-    })
-};
-
-const validateInputs = () => {
-
-    let noError = true;
-
-    const prenomValue = prenom.value.trim();
-    const nomValue = nom.value.trim();
-    const emailValue = email.value.trim();
-    const sujetValue = sujet.value.trim();
-    const texteValue = texte.value.trim();
-
-    if(prenomValue === '') {
-        setError(prenom, 'Prenom est requis');
-        noError = false;
-    } else {
-        setSuccess(prenom);
+    if (username.length < 3) {
+        document.getElementById('usernameError').textContent = "Le nom d'utilisateur doit contenir au moins 3 caractères.";
+        isValid = false;
     }
 
-    if(nomValue === '') {
-        setError(nom, 'Nom est requis');
-        noError = false;
-    } else {
-        setSuccess(nom);
+    if (!email.includes('@')) {
+        document.getElementById('emailError').textContent = "Veuillez entrer une adresse email valide.";
+        isValid = false;
     }
 
-    if(emailValue === '') {
-        setError(email, 'Courriel est requis');
-        noError = false;
-    } else if (!isValidEmail(emailValue)) {
-        setError(email, 'Donnez une adresse de courriel valide');
-        noError = false;
-    } else {
-        setSuccess(email);
+    if (password.length < 6) {
+        document.getElementById('passwordError').textContent = "Le mot de passe doit contenir au moins 6 caractères.";
+        isValid = false;
     }
 
-    if(sujetValue === '') {
-        setError(sujet, 'Sujet est requis');
-        noError = false;
-    } else {
-        setSuccess(sujet);
+    if (password !== confirmPassword) {
+        document.getElementById('confirmPasswordError').textContent = "Les mots de passe ne correspondent pas.";
+        isValid = false;
     }
 
-    if(texteValue === '') {
-        setError(texte, 'Message est requis');
-        noError = false;
-    } else {
-        setSuccess(texte);
+    if (firstname.trim() === '') {
+        document.getElementById('firstnameError').textContent = "Le prénom est requis.";
+        isValid = false;
     }
 
-    if (noError) {
-        sendData(); // Appel de la fonction pour envoyer les données
+    if (lastname.trim() === '') {
+        document.getElementById('lastnameError').textContent = "Le nom de famille est requis.";
+        isValid = false;
     }
-    return noError;
-};
 
-form.addEventListener('submit', e => {
-    e.preventDefault();
+    if (phone.length < 10 || !/^\d+$/.test(phone)) {
+        document.getElementById('phoneError').textContent = "Veuillez entrer un numéro de téléphone valide.";
+        isValid = false;
+    }
 
-    validateInputs();
-    
+    if (birthdate.trim() === '') {
+        document.getElementById('birthdateError').textContent = "Le date de naissance est requis.";
+        isValid = false;
+    }
+
+    if (new Date(birthdate) > new Date()) {
+        document.getElementById('birthdateError').textContent = "La date de naissance ne peut pas être dans le futur.";
+        isValid = false;
+    }
+
+    if (isValid) {
+        alert("Formulaire validé avec succès !");
+        // Ici, vous pouvez envoyer le formulaire ou effectuer d'autres actions
+    }
 });
