@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr-ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Site personnel, pour tester et regrouper mes connaissances en programmation web responsive. Site testé avec w3c et lighthouse.">
+    <link rel="manifest" href="manifest.json">
+    <script defer src="js/script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"  rel="stylesheet" />
+    <link rel="stylesheet" href="style/css/style.css">
+    <title>Óðinn - Le projet du Domaine Cyr</title>
+    <script>
+        // Register service worker.
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('service-worker.js')
+                    .then((reg) => {
+                        console.log('Service worker registered.', reg);
+                    });
+            });
+        }
+    </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Oswald:wght@200..700&family=Parisienne&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <div class="container">
+        <header>
+            <div class="w-full">
+                <nav class="shadow-lg">
+                    <div class="md:flex items-center justify-between py-2 px-8 md:px-12">
+                        <div class="flex justify-between items-center">
+                            <div class="font-bold md:text-3xl">
+                                <a href="index.html"><img src="https://odinn.ca/medias/logo.webp" class="w-20"
+                                        alt="Logo d'Óðinn"></a>
+                                <p class="text-xl">Le projet du Domaine Y. Cyr</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:block mx-2">
+                            <a href="index.html"
+                                class="rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2">Accueil</a>
+                            <a href="projet.html"
+                                class="rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2">Le
+                                projet</a>
+                            <a href="photos.html"
+                                class="rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2">Les
+                                photos</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <h1 class="text-3xl font-bold text-center m-5">Le Formulaire</h1>
+            <section>
+                <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+                    <form id="customForm" class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
+                        <h2 class="text-2xl font-bold mb-6">Inscription</h2>
+                        
+                        <div class="mb-4">
+                            <label for="username" class="block text-sm font-medium text-gray-700">Nom d'utilisateur</label>
+                            <input type="text" id="username" name="username" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                        </div>
+                
+                        <div class="mb-4">
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                            <input type="email" id="email" name="email" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                        </div>
+                
+                        <div class="mb-4">
+                            <label for="password" class="block text-sm font-medium text-gray-700">Mot de passe</label>
+                            <input type="password" id="password" name="password" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                        </div>
+                
+                        <div class="mb-4">
+                            <label for="confirmPassword" class="block text-sm font-medium text-gray-700">Confirmer le mot de passe</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                        </div>
+                
+                        <div class="mb-4">
+                            <label for="firstname" class="block text-sm font-medium text-gray-700">Prénom</label>
+                            <input type="text" id="firstname" name="firstname" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                        </div>
+                
+                        <div class="mb-4">
+                            <label for="lastname" class="block text-sm font-medium text-gray-700">Nom de famille</label>
+                            <input type="text" id="lastname" name="lastname" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                        </div>
+                
+                        <div class="mb-4">
+                            <label for="phone" class="block text-sm font-medium text-gray-700">Numéro de téléphone</label>
+                            <input type="tel" id="phone" name="phone" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                        </div>
+                
+                        <div class="mb-4">
+                            <label for="birthdate" class="block text-sm font-medium text-gray-700">Date de naissance</label>
+                            <input type="date" id="birthdate" name="birthdate" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                        </div>
+                
+                        <button type="submit" class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">S'inscrire</button>
+                    </form>
+            </section>
+        </main>
+        <footer>
+            <div class="grid md:grid-cols-10 grid-cols-1 gap-1">
+                <div class="md:col-span-5 col-span-1">
+                    <p class="md:text-left m-2">Telephone: <a href="tel:000-000-0000">000-000-0000</a><br>
+                        Courriel: <a href="mailto:lucas@odinn.biz">lucas@odinn.biz</a></p>
+                </div>
+                <div class="md:col-span-5 col-span-1 md:text-right m-2">
+                    <p>Lucas Comtois<br>
+                        <a href="https://odinn.biz" target="_blank">Site web principal</a>
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="flex flex-col items-center">
+                <p class="text-sm text-center text-gray-500">© Copyright 2024. Dans le cadre d'une formation du
+                    C&eacute;gep de Trois-Rivi&egrave;res. <a href="https://github.com/lucascomt/intWeb2-TPF"
+                        target="_blank">Lien Github</a> <a href="https://lucascomt.github.io/intWeb2-TPF/"
+                        target="_blank">Lien Web</a></p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
