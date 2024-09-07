@@ -39,7 +39,7 @@
             "label": "DYC screenshots"
         }
     ],
-    "start_url": "index.php",
+    "start_url": "index.html",
     "theme_color": "#01154e",
     "background_color": "#e9f3f6",
     "display": "standalone",
