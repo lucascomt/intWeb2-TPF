@@ -1,0 +1,50 @@
+{
+    "name": "Domaine Yolande Cyr",
+    "short_name": "DYC",
+    "icons": [
+        {
+            "src": "/medias/android-chrome-144x144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "/medias/favicon-16x16.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        },
+        {
+            "src": "/medias/favicon-32x32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "/medias/favicon-150x150.png",
+            "sizes": "150x150",
+            "type": "image/png"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "/medias/background.png",
+            "sizes": "590x998",
+            "type": "image/png",
+            "form_factor": "narrow",
+            "label": "DYC screenshots"
+        },
+        {
+            "src": "/medias/backgroundw.png",
+            "sizes": "1902x1000",
+            "type": "image/png",
+            "form_factor": "wide",
+            "label": "DYC screenshots"
+        }
+    ],
+    "start_url": "index.php",
+    "theme_color": "#01154e",
+    "background_color": "#e9f3f6",
+    "display": "standalone",
+    "description": "Le projet du Domaine Y. Cyr, petit domaine familiale",
+    "lang": "fr",
+    "id": "101",
+    "orientation": "landscape"
+}
