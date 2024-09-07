@@ -3,36 +3,36 @@
     "short_name": "DYC",
     "icons": [
         {
-            "src": "/medias/android-chrome-144x144.png",
+            "src": "/intWeb2-TPF/medias/android-chrome-144x144.png",
             "sizes": "144x144",
             "type": "image/png"
         },
         {
-            "src": "/medias/favicon-16x16.png",
+            "src": "/intWeb2-TPF/medias/favicon-16x16.png",
             "sizes": "16x16",
             "type": "image/png"
         },
         {
-            "src": "/medias/favicon-32x32.png",
+            "src": "/intWeb2-TPF/medias/favicon-32x32.png",
             "sizes": "32x32",
             "type": "image/png"
         },
         {
-            "src": "/medias/favicon-150x150.png",
+            "src": "/intWeb2-TPF/medias/favicon-150x150.png",
             "sizes": "150x150",
             "type": "image/png"
         }
     ],
     "screenshots": [
         {
-            "src": "/medias/background.png",
+            "src": "/intWeb2-TPF/medias/background.png",
             "sizes": "590x998",
             "type": "image/png",
             "form_factor": "narrow",
             "label": "DYC screenshots"
         },
         {
-            "src": "/medias/backgroundw.png",
+            "src": "/intWeb2-TPF/medias/backgroundw.png",
             "sizes": "1902x1000",
             "type": "image/png",
             "form_factor": "wide",
