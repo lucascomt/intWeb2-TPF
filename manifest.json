@@ -40,8 +40,8 @@
         }
     ],
     "start_url": "index.html",
-    "theme_color": "#01154e",
-    "background_color": "#e9f3f6",
+    "theme_color": "#A4EF9A",
+    "background_color": "#176E8A",
     "display": "standalone",
     "description": "Le projet du Domaine Y. Cyr, petit domaine familiale",
     "lang": "fr",
