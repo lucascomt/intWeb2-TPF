@@ -25,14 +25,14 @@
     ],
     "screenshots": [
         {
-            "src": "/intWeb2-TPF/medias/background.png",
+            "src": "/intWeb2-TPF/medias/background.webp",
             "sizes": "590x998",
             "type": "image/png",
             "form_factor": "narrow",
             "label": "DYC screenshots"
         },
         {
-            "src": "/intWeb2-TPF/medias/backgroundw.png",
+            "src": "/intWeb2-TPF/medias/backgroundw.webp",
             "sizes": "1902x1000",
             "type": "image/png",
             "form_factor": "wide",
