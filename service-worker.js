@@ -12,6 +12,7 @@ const FILES_TO_CACHE = [
     'fonts/Oswald-Regular.tff',
     'js/script.js',
     'js/service-worker.js',
+    'js/install_app.js',
     'medias/photos/2010/1.webp',
     'medias/photos/2010/2.webp',
     'medias/photos/2010/3.webp',
@@ -64,7 +65,8 @@ const FILES_TO_CACHE = [
     'medias/photos/hiver/450781222_835910738117648_1078639921587855241_n.webp',
     'medias/photos/yolande.webp',
     'medias/photos/terre_familiale.webp',
-    'style/css/style.css'
+    'style/css/style.css',
+    'https://cdn.tailwindcss.com'
 ];
 self.addEventListener('install', (evt) => {
  console.log('[ServiceWorker] Install');
