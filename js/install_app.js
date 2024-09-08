@@ -6,14 +6,15 @@ window.addEventListener('beforeinstallprompt', (e) => {
     e.preventDefault();
     // Sauvegarde l'événement pour l'utiliser plus tard
     deferredPrompt = e;
-    // Affiche le bouton d'installation
-    const installButton = document.getElementById('install-button');
-    installButton.style.display = 'block';
+    // Affiche la bannière flottante
+    const installBanner = document.getElementById('install-banner');
+    installBanner.style.display = 'flex';
 
     // Ajoute un écouteur d'événement au bouton pour déclencher l'installation
+    const installButton = document.getElementById('install-button');
     installButton.addEventListener('click', () => {
-        // Cache le bouton d'installation
-        installButton.style.display = 'none';
+        // Cache la bannière
+        installBanner.style.display = 'none';
         // Affiche la demande d'installation
         deferredPrompt.prompt();
         // Attends la réponse de l'utilisateur
