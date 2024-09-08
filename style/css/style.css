@@ -4,11 +4,12 @@ body {
   margin: 0;
   padding: 0;
   background-color: #176E8A;
-  color: #63fa4f;
+  color: #90f760;
   font-size: 1.2rem;
   line-height: 1.1;
   min-width: 350px;
   font-family: "Oswald", system-ui;
+  text-shadow: 2px 2px 4px black;
 }
 
 h1 {

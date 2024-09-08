@@ -1,5 +1,5 @@
 /**  VARIABLES **/
-$couleur-text: #63fa4f; //texte
+$couleur-text: #90f760; //texte
 $couleur-principale: #b5bdd5; //page
 $couleur-principale-fonce: #04077B; //cadre
 $couleur-header: #010d2562; //background-header
@@ -14,6 +14,7 @@ body {
   line-height: 1.1;
   min-width: 350px;
   font-family: "Oswald", system-ui;
+  text-shadow: 2px 2px 4px black;
 }
 
 h1 {
