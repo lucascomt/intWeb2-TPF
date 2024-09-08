@@ -106,6 +106,37 @@
                         réglementations en vigueur et une préparation adéquate pour les travaux à réaliser.</p>
                 </fieldset>
             </section>
+
+
+
+
+
+            <fieldset class="p-5 mt-5">
+                <legend class="p-1"> Faite un don: </legend>
+                <p class="py-2">En soutenant notre projet, vous participez à l'aménagement respectueux d'une terre vierge : création de sentiers vers notre lieu de rassemblement, construction de sites d'observation, de petits espaces cultivables et d'habitats pour quelques animaux de ferme, tout en préservant l'équilibre naturel de ce lieu qui nous tient tant à cœur.</p>
+                    <div id="donate-button-container">
+                        <div id="donate-button" class="object-center"></div>
+                        <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+                        <script>
+                        PayPal.Donation.Button({
+                        env:'production',
+                        hosted_button_id:'7MJJRJL64WN9W',
+                        image: {
+                        src:'https://www.paypalobjects.com/fr_CA/i/btn/btn_donate_SM.gif',
+                        alt:'Bouton Faire un don avec PayPal',
+                        title:'PayPal - The safer, easier way to pay online!',
+                        }
+                        }).render('#donate-button');
+                        </script>
+                        </div>
+            </fieldset>
+
+
+
+            <section>
+        
+                
+            </section>
             <section>
                 <h2 class="hidden">Timeline</h2>
                 <!-- Timeline trouve sur https://tailwindcomponents.com/component/timeline -->
